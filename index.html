@@ -8,12 +8,18 @@
     <title>Pokédex</title>
   </head>
   <body>
+    <script src="app.js" async defer></script>
     <div class="container">
       <img src="images/pokemon-logo.png" class="container__logo" />
       <form class="container__main">
         <h2>Enter the pokémon's name or id:</h2>
-          <input type="text" placeholder="Bulbasaur" />
-          <button type="submit">Search</button>
+        <input
+          type="text"
+          placeholder="Bulbasaur"
+          required
+          id="pokemon-identifier"
+        />
+        <button type="submit">Search</button>
       </form>
       <hr />
       <div class="container__pokemon-card">
@@ -21,20 +27,23 @@
           <img
             src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
             class="container__pokemon-icon"
+            id="pokemon-front-icon"
           />
           <img
             src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png"
             class="container__pokemon-icon"
+            id="pokemon-back-icon"
           />
         </div>
-        <p>
+
+        <div class="container__pokemon-attribute">
           <b>Name:</b>
-          Bulbasaur
-        </p>
-        <p>
+          <p id="pokemon-name">Bulbasaur</p>
+        </div>
+        <div class="container__pokemon-attribute">
           <b>Type:</b>
-          Grass | Poison
-        </p>
+          <p id="pokemon-type">Grass | Poison</p>
+        </div>
       </div>
     </div>
   </body>

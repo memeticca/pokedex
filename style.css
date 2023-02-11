@@ -63,13 +63,9 @@ body {
 }
 
 .container__pokemon-card {
-  text-align: center;
-}
-.container__pokemon-card b {
-  text-transform: uppercase;
-  color: #2b73b9;
-  font-weight: normal;
-  font-family: "Righteous", cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container__pokemon-icons {
@@ -80,4 +76,20 @@ body {
   width: 15vb;
   border-radius: 100%;
   box-shadow: 0.1px 0.1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container__pokemon-attribute {
+  display: flex;
+  gap: 10px;
+}
+
+.container__pokemon-attribute b {
+  text-transform: uppercase;
+  color: #2b73b9;
+  font-weight: normal;
+  font-family: "Righteous", cursive;
+}
+
+.container__pokemon-attribute p {
+  text-transform: capitalize;
 }
