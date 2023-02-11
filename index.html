@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pokédex</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="images/pokemon-logo.png" class="container__logo" />
+      <form class="container__main">
+        <h2>Enter the pokémon's name or id:</h2>
+          <input type="text" placeholder="Bulbasaur" />
+          <button type="submit">Search</button>
+      </form>
+      <hr />
+      <div class="container__pokemon-card">
+        <div class="container__pokemon-icons">
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+            class="container__pokemon-icon"
+          />
+          <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png"
+            class="container__pokemon-icon"
+          />
+        </div>
+        <p>
+          <b>Name:</b>
+          Bulbasaur
+        </p>
+        <p>
+          <b>Type:</b>
+          Grass | Poison
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
